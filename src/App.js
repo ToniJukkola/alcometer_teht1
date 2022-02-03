@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 
+
+
 function App() {
   const [paino, setPaino] = useState(0);
   const [pullot, setPullot] = useState(0);
@@ -16,13 +18,16 @@ function App() {
     let grammat = litrat * 8 * 4.5;
     let kulutus = paino / 10;
     let jaljella = grammat - (kulutus * aika);
+
     if (sukupuoli === 'mies') {
-      pitoisuus =  jaljella / (paino * 0.7);
+      pitoisuus = jaljella / (paino * 0.7);
     }
     else {
-      pitoisuus =  jaljella / (paino * 0.6);
-    }
+      pitoisuus = jaljella / (paino * 0.6);
+    } 
+   
     setTulos(pitoisuus);
+    
   }
 
   return (
@@ -45,6 +50,13 @@ function App() {
         </div>
         <div>
           <button type='button' onClick={lasketaan}>Calculate</button>
+        </div>
+        <div>
+          <footer>
+          <div>
+            Do not drunk and drive
+          </div>
+          </footer>
         </div>
       
    </form>
