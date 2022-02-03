@@ -25,7 +25,9 @@ function App() {
     else {
       pitoisuus = jaljella / (paino * 0.6);
     } 
-   
+   if (pitoisuus <= 0) {
+     pitoisuus = 0;
+   }
     setTulos(pitoisuus);
     
   }
