@@ -56,7 +56,7 @@ function App() {
         <div>
           <footer>
           <div>
-            Do not drunk and drive
+            Do not drink and drive
           </div>
           </footer>
         </div>
